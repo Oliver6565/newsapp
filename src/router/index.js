@@ -1,14 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Login from '../views/Login.vue'
+// 记住！reset.css是在这里导入的 不是在index.html前面导入
+import '../assets/css/reset.css'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Login',
+    component: Login
   },
   {
     path: '/about',
