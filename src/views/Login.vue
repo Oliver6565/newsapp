@@ -4,7 +4,7 @@
       <div class="title">即时资讯</div>
       <div class="content">24小时热门资讯，带您了解全球最新动态，随时了解实时资讯，内容丰富，满足您各领域的信息资讯，使用起来吧</div>
       <div class="button_box">
-        <div><button>注册 </button></div>
+        <div><button @click="toRegist">注册 </button></div>
         <div><button>登陆 </button></div>
       </div>
     </div>
@@ -14,7 +14,15 @@
 <script>
 // @ is an alias to /src
 export default {
-  name: 'Login'
+  name: 'Login',
+
+  methods:{
+    toRegist(){
+      this.$router.push({
+        path:'/Regist'
+      })
+    }
+  }
 }
 </script>
 
@@ -30,6 +38,8 @@ export default {
     height: 197px;
     position: absolute;
     bottom: 62px;
+    // 375-327 = 48px
+    // 48/2 = 24px
     left: 24px;
 
     .title{
@@ -52,13 +62,15 @@ export default {
       width: 150px;
       height: 38px;
       border-radius: 25px;
+      // border: none;
       border-color: rgb(82, 82, 250);
     }
     div:first-child{
       button{
         color: rgb(82, 82, 250);
-        // 可以使得button按钮背景变透明
-        background:none;
+        // 可以使得button按钮背景变透明; 两种都可以
+        // background:none;
+           background-color: transparent;
       }
     }
     div:last-child{

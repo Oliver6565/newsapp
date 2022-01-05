@@ -147,3 +147,6 @@ img {
   vertical-align: middle;
 }
 /* 去掉图片底部默认的3/5像素空白缝隙 */
+button {
+  outline: none;
+}

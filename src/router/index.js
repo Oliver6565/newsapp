@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
+import Regist from '../views/Regist.vue'
+
+
 // 记住！reset.css是在这里导入的 不是在index.html前面导入
 import '../assets/css/reset.css'
-
+import '../assets/css/global.css'
 Vue.use(VueRouter)
 
 const routes = [
@@ -11,6 +14,11 @@ const routes = [
     path: '/',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/Regist',
+    name: 'Regist',
+    component:Regist
   },
   {
     path: '/about',
