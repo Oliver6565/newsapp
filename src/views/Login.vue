@@ -5,7 +5,7 @@
       <div class="content">24小时热门资讯，带您了解全球最新动态，随时了解实时资讯，内容丰富，满足您各领域的信息资讯，使用起来吧</div>
       <div class="button_box">
         <div><button @click="toRegist">注册 </button></div>
-        <div><button>登陆 </button></div>
+        <div><button @click="toindex">登陆 </button></div>
       </div>
     </div>
   </div>
@@ -20,6 +20,11 @@ export default {
     toRegist(){
       this.$router.push({
         path:'/Regist'
+      })
+    },
+    toindex(){
+      this.$router.push({
+        path:'/index'
       })
     }
   }

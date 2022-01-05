@@ -46,7 +46,7 @@ export default {
     background-position: 196px 0;
 
 
-    .info_box{
+    .info_box{      
         height: 130px;
         margin-top: 70px;
         padding: 0 30px;
@@ -68,7 +68,7 @@ export default {
         }
     }
     .main{
-        width: 375px;
+        width: 100%;
         height: 568px;
         background-color: #fff;
         border-radius: 50px 50px 0 0;

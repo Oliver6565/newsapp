@@ -1,3 +1,7 @@
 .regist .main .el-divider__text {
   color: #E8E8E8 !important;
 }
+.index .search .el-input__inner {
+  border-radius: 20px;
+  font-size: 12px;
+}
