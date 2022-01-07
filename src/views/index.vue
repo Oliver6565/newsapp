@@ -12,7 +12,7 @@
       <div class="main">
           <div class="title">即时咨讯</div>
           <div class="news_list">
-              <div class="news">
+              <div class="news" @click="toNews">
                   <img src="../assets/image/bg/news_img1.svg">
                   <div class="content">
                     <div class="news_avatar"><img src="../assets/image/bg/news_avatar1.svg"></div>
@@ -82,6 +82,11 @@ export default {
     data(){
         return{
             input:''
+        }
+    },
+    methods:{
+        toNews(){
+            this.$router.push('/News')
         }
     }
 }

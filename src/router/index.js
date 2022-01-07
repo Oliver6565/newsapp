@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Regist from '../views/Regist.vue'
 import index from '../views/index.vue'
+import News from '../views/News.vue'
 
 // 记住！reset.css是在这里导入的 不是在index.html前面导入
 import '../assets/css/reset.css'
@@ -18,12 +19,17 @@ const routes = [
   {
     path: '/Regist',
     name: 'Regist',
-    component:Regist
+    component: Regist
   },
   {
     path:'/index',
     name:'index',
-    component:index
+    component: index
+  },
+  {
+    path:'/News',
+    name:'News',
+    component: News
   },
   {
     path: '/about',
