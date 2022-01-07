@@ -1,9 +1,9 @@
 <template>
   <div class="bar">
       <div class="icons">
-        <div><img @click="toHome" src="../assets/image/icon/home_icon.svg"></div>
-        <div><img @click="toCollection" src="../assets/image/icon/play_icon.svg"></div>
-        <div><img @click="toCart" src="../assets/image/icon/profile_icon.svg"></div>
+        <div><img @click="toindex" src="../assets/image/icon/home_icon.svg"></div>
+        <div><img @click="toPlay" src="../assets/image/icon/play_icon.svg"></div>
+        <div><img src="../assets/image/icon/profile_icon.svg"></div>
       </div>
   </div>
 </template>
@@ -11,9 +11,14 @@
 <script>
 export default {
   methods:{
-    toHome(){
+    toindex(){
       this.$router.push({
-        path:"/"
+        path:"/index"
+      })
+    },
+    toPlay(){
+      this.$router.push({
+        path:"/Video"
       })
     }
   }

@@ -2,7 +2,7 @@
   <div>
       <div class="news">
           <div class="icon">
-              <i class="el-icon-arrow-left"></i>
+              <i class="el-icon-arrow-left" @click="toindex"></i>
               <i class="el-icon-share"></i>
           </div>
           <div class="main">
@@ -34,13 +34,19 @@
 
 <script>
 export default {
-
+    methods:{
+        toindex(){
+        this.$router.push({
+            path:"/index"
+        })
+        }
+    }
 }
 </script>
 
 <style lang="less" scoped>
 .news{
-    margin:44px 30px 48px;
+    margin:44px 30px 50px;
     .icon{
         i{
             font-weight: bold;
