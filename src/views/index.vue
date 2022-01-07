@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="index">
       <div class="search">
          <el-input
@@ -48,13 +49,36 @@
                 <li>娱乐</li>
               </ul>
           </div>
-          <!-- <div>ssss</div> -->
+          <div class="today_news_list">
+              <div class="news_box">
+                  <div><img src="../assets/image/news/todaynews1.svg"></div>
+                  <div>
+                    <div class="tag"># 5G时代</div>
+                    <p>在2021年中国国际服务贸易交易会全球服务贸易峰会上的致辞</p>
+                    <div class="time">即时通讯    50分钟前</div>
+                  </div>
+              </div>
+              <div class="news_box">
+                  <div><img src="../assets/image/news/todaynews2.svg"></div>
+                  <div>
+                    <div class="tag"># 共同富裕</div>
+                    <p>习近平在金砖国家领导人第十三次会晤上的讲话</p>
+                    <div class="time">即时通讯    50分钟前</div>
+                  </div>
+              </div>
+          </div>
       </div>
   </div>
+  <Bar></Bar>
+</div>
 </template>
 
 <script>
+import Bar from '../components/bar.vue'
 export default {
+    components: {
+      Bar
+    },
     data(){
         return{
             input:''
@@ -66,21 +90,20 @@ export default {
 <style lang="less" scoped>
 .index{
     margin:44px 30px 34px;
-    width: 315px;
-    height: 734px;
+    // height: 734px;
     .search{
         width: 100%;
         height: 44px;
         margin-bottom: 20px;
         .el-input{
-            width: 272px;
+            width: 80%;
             display: inline-block;
             font-size: 14px;
         }
         .avatar{
-            width: 32px;
+            width: 10%;
             height: 32px;
-            margin-left: 11px;
+            margin-left: 10%;
             display: inline-block;
         }
     }
@@ -91,7 +114,7 @@ export default {
             font-weight: bold;
         }
         .news_list{
-            width: 345px;
+            width: 100%;
             height:170px ;
             overflow: scroll;
             margin: 20px 0px;
@@ -136,8 +159,9 @@ export default {
 
         .typebar{
             width: 100%;
+            height: 20px;
             ul{
-                margin: 10px 0;
+                margin-top: 10px;
                 li{
                     font-size: 14px;
                     border-radius: 5px;
@@ -151,6 +175,33 @@ export default {
                     background: #000;
                 }
             } 
+        }
+        
+        .today_news_list{
+            padding: 10px;
+            .news_box{
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 72px;
+                    height: 90px;
+                    border-radius: 10px;
+                }
+                div:nth-child(2){
+                    padding-left: 10px;
+                }
+                p{
+                    margin: 10px 0;
+                    line-height: 20px;
+                    height: 40px;
+                    overflow: hidden;
+                }
+                .tag ,.time{
+                    font-size: 14px;
+                    color: rgb(136, 148, 162);
+                }
+            }
         }
     }
 }

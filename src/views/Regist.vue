@@ -38,8 +38,7 @@ export default {
 <style lang="less" scoped>
 .regist{
     padding-top: 44px;
-    width: 375px;
-    height: 768px;
+    // width: 375px;
     background-color: #433FFA;
     background-image: url('../assets/image/regist_bg.svg');
     background-repeat: no-repeat;
@@ -69,9 +68,10 @@ export default {
     }
     .main{
         width: 100%;
-        height: 568px;
+        // height: 500px;
         background-color: #fff;
-        border-radius: 50px 50px 0 0;
+        // border-radius: 50px 50px 0 0;
+        // border: 0px;
         text-align: center;
         .title{
             font-size: 18px;
@@ -82,7 +82,7 @@ export default {
             font-size: 18px;
         }
         button{
-            width: 275px;
+            width: 50%;
             height: 44px;
             margin:20px 0;
             color: #fff;
