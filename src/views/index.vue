@@ -94,7 +94,7 @@ export default {
 
 <style lang="less" scoped>
 .index{
-    margin:44px 30px 34px;
+    margin:44px 30px 74px;
     // height: 734px;
     .search{
         width: 100%;
