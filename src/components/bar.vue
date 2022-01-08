@@ -2,8 +2,8 @@
   <div class="bar">
       <div class="icons">
         <div><img @click="toindex" src="../assets/image/icon/home_icon.svg"></div>
-        <div><img @click="toPlay" src="../assets/image/icon/play_icon.svg"></div>
-        <div><img src="../assets/image/icon/profile_icon.svg"></div>
+        <div><img @click="toVideo" src="../assets/image/icon/play_icon.svg"></div>
+        <div><img @click="toProfile" src="../assets/image/icon/profile_icon.svg"></div>
       </div>
   </div>
 </template>
@@ -16,9 +16,14 @@ export default {
         path:"/index"
       })
     },
-    toPlay(){
+    toVideo(){
       this.$router.push({
         path:"/Video"
+      })
+    },
+    toProfile(){
+      this.$router.push({
+        path:'/Profile'
       })
     }
   }

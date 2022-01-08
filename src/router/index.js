@@ -5,6 +5,7 @@ import Regist from '../views/Regist.vue'
 import index from '../views/index.vue'
 import News from '../views/News.vue'
 import Video from '../views/Video.vue'
+import Profile from '../views/Profile.vue'
 // 记住！reset.css是在这里导入的 不是在index.html前面导入
 import '../assets/css/reset.css'
 import '../assets/css/global.css'
@@ -42,6 +43,11 @@ const routes = [
     path:'/Video',
     name:'Video',
     component: Video
+  },
+  {
+    path:'/Profile',
+    name:'Profile',
+    component: Profile
   },
   {
     path: '/about',
